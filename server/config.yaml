@@ -1,0 +1,35 @@
+challenges:
+- name: chall00
+  flag: Sanity check
+  key: 6ZXspCLaxGdYNO6Tlum4Te9xFOhv6U7T49ztrO3yuqqL9redzDemESEw6i78hRTm
+- name: chall01
+  flag: God bless America!
+  key: YHX9UpDwx5g3bL2YFNazRgZ2TFXiVxkE6lwI0oViwuhkZxuepus3vbf4Xsvsvynv
+- name: chall02
+  flag: 4.2.0
+  key: VSUEC5CQKH6VHTr8KD5dVRZMU84GC7kT0CnHC1aZfweh9tzgISdZiFewygpj6Ir2
+- name: chall03
+  flag: "Bri\u017Einski spomeniki so najstarej\u0161i znani ohranjeni zapisi v sloven\u0161\
+    \u010Dini in najstarej\u0161i latini\u010Dni zapis v katerem koli slovanskem jeziku"
+  key: MSNSWJy5UZecnE7GFxnP2pu1nXm46uA7V5seou3sIOsF31wMPzOIWazGmjPqbVeH
+- name: chall04
+  flag: null
+  key: sguplcCLYnPC2u5naYW8YVpJzk5OaDF0MNdYNRcirzV9lOw6xHw3QgPI7zqVuJjT
+- name: chall05
+  flag: null
+  key: MoZrXv6VIc2K2AlFJOqSImyYcnasay1UfPm1xi4fyUzREBw6ZNa3igOvyyNze6p1
+- name: chall06
+  flag: monada je monoid v kategoriji endofunktorjev
+  key: XPOPInHgyRf7cFQKiXyJBz0hycrlMiUxSKScVAqL4xeNcbJCnvXiFueadG75fm4T
+- name: chall07
+  flag: null
+  key: 5LLYEvLAmfZ77kjH8syo4lz6Iqml9m5PSvbaRBU4R2DVh6W1eQR5jKWSRKdJuQ0m
+- name: chall08
+  flag: The mitochondria is the powerhouse of the cell
+  key: jaOzT3zW8fej4WroL0kdecKqgAxxGomEgGl7OssS8qooYnujkNyKUoOuU7c60ZmT
+- name: chall09
+  flag: correct horse battery staple
+  key: 0to2KqU2E6c0JAbOQzuiMo27G2BysanpeXA0zp6j3RsA1rG3avTLtfEexGoCDRP6
+- name: chall10
+  flag: "Bl\xE5haj was here"
+  key: MkhmEDhSkUze0wGqISLvBUSAGRMAjFguZ7oBlPptUZJSfbOSfzBWXZN9swfh7nwk

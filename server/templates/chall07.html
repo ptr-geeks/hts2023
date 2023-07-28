@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width">
+
+<title>[7] PTR 2023 Hack this site</title>
+<link rel="stylesheet" href="s/styleBSidesTheme.css" type="text/css" media="screen">
+<link rel="stylesheet" href="s/styleHts.css" type="text/css" media="screen">
+<link rel="shortcut icon" type="image/png" href="s/favicon.png"/>
+</head>
+<body>
+    <div class="mainWrap">
+        <div class="block txtCenter borderBottom">
+            <h1>Hack this site</h1>
+            <h2>Poletni tabor računalništva 2023</h2>
+        </div>
+        <div class="block txtCenter mt4">
+            <h1>7. Izziv: </h1>
+            <p>
+                Janez se je spoprijateljil z roboti in je sestavil svoj kompliciran vpisni sistem, ki je tako zahteven,
+                da ga roboti rešijo brez problemov medtem ko so ljudje prepočasni! Poznaš kakšnega robota, ki bi ti
+                pomagal?
+            </p>
+            <p style="margin: 0px 100px">
+                <pre>
+from datetime import datetime
+import random
+
+def genflags():
+    seed = datetime.utcnow().timestamp()
+    seed = int(seed) // 5
+    seed = seed ^ 0xDEADBEEF
+    random.seed(seed)
+    flags = [random.randint(0, 65535) for _ in range(8)]
+    return flags
+
+
+def testflags(data):
+    flags = genflags()
+    for i in range(1, 8):
+        flags[i] = flags[i] ^ flags[i - 1]
+    for i in range(8):
+        if flags[i] != data[i]:
+            return False
+    return True
+                </pre>
+            </p>
+            <p>
+                Flag-i so dostopni na: <br/>
+                <a href="/s/flag1">flag1</a> <br/>
+                <a href="/s/flag2">flag2</a> <br/>
+                <a href="/s/flag3">flag3</a> <br/>
+                <a href="/s/flag4">flag4</a> <br/>
+                <a href="/s/flag5">flag5</a> <br/>
+                <a href="/s/flag6">flag6</a> <br/>
+                <a href="/s/flag7">flag7</a> <br/>
+                <a href="/s/flag8">flag8</a> <br/>
+            </p>
+            <p>
+                <form id="otpform" autocomplete="off">
+                    <input type="submit" name="submit" value="Generiraj" />
+                </form>
+                <p id="ciphertext"></p>
+            </p>
+        </div>
+        <div class="block txtCenter mt4">
+            <p>
+                <form method="POST" autocomplete="off">
+                    <input type="text" name="flag1" autofocus />
+                    <input type="text" name="flag2" autofocus />
+                    <input type="text" name="flag3" autofocus />
+                    <input type="text" name="flag4" autofocus />
+                    <input type="text" name="flag5" autofocus />
+                    <input type="text" name="flag6" autofocus />
+                    <input type="text" name="flag7" autofocus />
+                    <input type="text" name="flag8" autofocus />
+                    <input type="submit" name="submit" value="Prove you're a robot" />
+                </form>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
