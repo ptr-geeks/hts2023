@@ -23,4 +23,14 @@ def challenge(flag, next_challenge):
         )
 
 def static(name):
+    if name == "app":
+        return helpers.uncache(
+            send_from_directory(
+                "./chall/chall10",
+                "app",
+                as_attachment=True,
+                etag=False,
+                max_age=0,
+            )
+        )
     return helpers.serve_static(name)
