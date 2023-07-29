@@ -1,5 +1,7 @@
 FROM python:3.10-slim
 
+ENV WORKERS=32
+
 WORKDIR /app
 
 COPY requirements.txt /app
@@ -12,4 +14,4 @@ USER 1001:1001
 
 # --cap-add CAP_NET_BIND_SERVICE
 EXPOSE 80
-ENTRYPOINT gunicorn -c python:config -w 32 -b 0.0.0.0:80 server:app
+ENTRYPOINT gunicorn -c python:config -w ${WORKERS} -b 0.0.0.0:80 server:app
