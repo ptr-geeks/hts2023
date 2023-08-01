@@ -16,14 +16,16 @@ def random_string(n) -> str:
         for _ in range(n)
     )
 
-def challenge(_, next_challenge):
+def challenge(_, next_challenge, metrics):
     if request.method == "POST":
+        metrics.challenges_attempted.labels(_chall).inc()
         session = request.cookies.get("session", None)
         if session is not None:
             try:
                 session = json.loads(base64.b64decode(session.encode("utf-8")).decode("utf-8"))
                 if session.get("admin", False) == True:
                     print(f"[INFO] {_chall} solved")
+                    metrics.challenges_solved.labels(_chall).inc()
                     return next_challenge;
                 else:
                     return redirect(request.url)
@@ -45,5 +47,5 @@ def challenge(_, next_challenge):
         r.set_cookie("session", data, expires = datetime.datetime.now() + datetime.timedelta(days=7))
         return helpers.uncache(r)
 
-def static(name):
+def static(name, metrics):
     return helpers.serve_static(name)

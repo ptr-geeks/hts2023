@@ -27,8 +27,9 @@ def testflags(data):
             return False
     return True
 
-def challenge(_, next_challenge):
+def challenge(_, next_challenge, metrics):
     if request.method == "POST":
+        metrics.challenges_attempted.labels(_chall).inc()
         try:
             flags = [
                 int(request.form.get("flag1", 0)),
@@ -42,6 +43,7 @@ def challenge(_, next_challenge):
             ]
             if testflags(flags):
                 print(f"[INFO] {_chall} solved")
+                metrics.challenges_solved.labels(_chall).inc()
                 return next_challenge;
             else:
                 return redirect(request.url)
@@ -57,7 +59,7 @@ def challenge(_, next_challenge):
             )
         )
 
-def static(name):
+def static(name, metrics):
     if name.startswith("flag"):
         flags = genflags()
         if name == "flag1":

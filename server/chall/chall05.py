@@ -6,8 +6,9 @@ import helpers
 
 _chall = os.path.basename(os.path.splitext(__file__)[0])
 
-def challenge(_, next_challenge):
+def challenge(_, next_challenge, metrics):
     if request.method == "POST":
+        metrics.challenges_attempted.labels(_chall).inc()
         username = request.form.get("username", None)
         password = request.form.get("password", None)
         if username is not None and password is not None:
@@ -16,6 +17,7 @@ def challenge(_, next_challenge):
             c.execute(f"SELECT * FROM users WHERE username = '{username}' AND password = '{password}'")
             if c.fetchone() is not None:
                 print(f"[INFO] {_chall} solved")
+                metrics.challenges_solved.labels(_chall).inc()
                 return next_challenge;
             else:
                 return redirect(request.url)
@@ -29,5 +31,5 @@ def challenge(_, next_challenge):
             )
         )
 
-def static(name):
+def static(name, metrics):
     return helpers.serve_static(name)

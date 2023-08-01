@@ -1,4 +1,7 @@
 from flask import Response, Flask
+from prometheus_flask_exporter.multiprocess import GunicornPrometheusMetrics
+from prometheus_client import Counter
+
 import yaml
 try:
     from yaml import CLoader as Loader
@@ -20,6 +23,21 @@ app.config.update(
     SEND_FILE_MAX_AGE_DEFAULT=0,
 )
 
+# Configure metrics
+metrics = GunicornPrometheusMetrics(app)
+
+class Metrics():
+    challenges_attempted = Counter(
+        "challenges_attempted",
+        "Number of challenges attempted",
+        ["challenge"],
+    )
+    challenges_solved = Counter(
+        "challenges_solved",
+        "Number of challenges solved",
+        ["challenge"],
+    )
+
 # Route home
 @app.route("/")
 def home() -> Response:
@@ -38,7 +56,7 @@ def challenge() -> Response:
 
     module_name = "chall." + chall
     module = importlib.import_module(module_name, package=__package__)
-    return module.challenge(flag, helpers.next_challenge(config))
+    return module.challenge(flag, helpers.next_challenge(config), Metrics)
 
 # Route static files
 @app.route("/s/<path:name>", methods=["GET"])
@@ -49,5 +67,5 @@ def static_route(name) -> Response:
 
     module_name = "chall." + chall
     module = importlib.import_module(module_name, package=__package__)
-    return module.static(name)
+    return module.static(name, Metrics)
 

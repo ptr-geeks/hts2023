@@ -5,10 +5,12 @@ import helpers
 
 _chall = os.path.basename(os.path.splitext(__file__)[0])
 
-def challenge(flag, next_challenge):
+def challenge(flag, next_challenge, metrics):
     if request.method == "POST":
+        metrics.challenges_attempted.labels(_chall).inc()
         if request.form.get("flag") == flag:
             print(f"[INFO] {_chall} solved")
+            metrics.challenges_solved.labels(_chall).inc()
             return next_challenge;
         else:
             return redirect(request.url)
@@ -22,7 +24,7 @@ def challenge(flag, next_challenge):
             )
         )
 
-def static(name):
+def static(name, metrics):
     if name == "app":
         return helpers.uncache(
             send_from_directory(
