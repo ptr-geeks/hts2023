@@ -48,7 +48,7 @@ Naslov
 </b></summary>
 Kaj išče in kje to najde s slikico z dev tooli
 
-![Image](images/challXdev.png)
+![Image](images/sol1.png)
 
 oz. opis programa in obrazložitev ter koda
 </details>
