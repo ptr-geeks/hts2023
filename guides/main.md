@@ -1,5 +1,5 @@
 # "Navodila", namigi in ostale informacije
 
-![mainpage](/guides/images/mainpage.png)
+![mainpage](/guides/images/start.png)
 
 [**Tukaj**](/guides/chall0.md)
