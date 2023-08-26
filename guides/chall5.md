@@ -1,38 +1,37 @@
 |[<<](/guides/challx-1.md)|[START](/guides/main.md)|[0](/guides/chall0.md)|[1](/guides/chall1.md)|[2](/guides/chall2.md)|[3](/guides/chall3.md)|[4](/guides/chall4.md)|[5](/guides/chall5.md)|[6](/guides/chall6.md)|[7](/guides/chall7.md)|[8](/guides/chall8.md)|[9](/guides/chall9.md)|[10](/guides/chall10.md)|[END](/guides/end.md)|[>>](/guides/challx+1.md)|
 |:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|
 
-#### Piškotek / Cookie = 6ZXspCLaxGdYNO6Tlum4Te9xFOhv6U7T49ztrO3yuqqL9redzDemESEw6i78hRTm
+#### Piškotek / Cookie = sguplcCLYnPC2u5naYW8YVpJzk5OaDF0MNdYNRcirzV9lOw6xHw3QgPI7zqVuJjT
 
-# Problem 1 / Challenge 1
-Napad na ameriško vlado
+# Problem 5 / Challenge 5
+Vpis
 
-![Image](images/image1.png)
+[//]: #slikica
 
-[Preberi si več o napadau na tej povezavi](https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_2a0d14e6-221d-44bd-bda8-f834c663f723)
+![Image](/guides/images/image5.png)
 
 
 # Namigi / Hints
 
-<details>
+<details >
 <summary>
     <i>Namig 1</i> 
 </summary>
-    Preberi članek
+    Kateri "jezik je ponavadi uporabljen pri preverjanu vpisnih podatkov"
 </details>
 
-<details>
+<details >
 <summary>
     <i>Namig 2</i> 
 </summary>
-    Kaj je vidno v kodi in ne na spletni strani?
+    Kako exploitamo ta jezik ?
 </details>
-<details>
+<details >
 <summary>
     <i>Namig 3</i> 
 </summary>
-   CTRL + U in pogledamo vir strani in <b>namig 2</b>
-</details>
-
+    SQL (Structured query language), <a href="https://www.youtube.com/watch?v=2OPVViV-GQk">Video o SQL Injection</a>
+<br>
 
 # Rešitev / Solution
 
@@ -40,14 +39,15 @@ Napad na ameriško vlado
 <summary><b>
     Rešitev
 </b></summary>
-    <b>God bless America!</b>
+    admin 
+
+    'or "1"="1";--
 </details>
 <details>
 <summary><b>
     Opis
 </b></summary>
-Slika vira strani v F12
-
-![Image](images/sol1.png)
+<a href="https://www.youtube.com/watch?v=2OPVViV-GQk">Video o SQL Injection</a>
 
 </details>
+
