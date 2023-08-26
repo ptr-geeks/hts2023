@@ -6,7 +6,6 @@
 # Problem X / Challenge X
 Naslov
 
-
 [//]: #slikica
 
 ![Image](images/challX.png)
