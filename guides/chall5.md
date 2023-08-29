@@ -13,13 +13,13 @@ Vpis
 <summary>
     <i>Namig 1</i> 
 </summary>
-    Kateri "jezik je ponavadi uporabljen pri preverjanu vpisnih podatkov"
+    Kateri "jezik" je ponavadi uporabljen pri preverjanu vpisnih podatkov?
 </details>
 <details>
 <summary>
     <i>Namig 2</i> 
 </summary>
-    Kako exploitamo ta jezik ?
+    Kako izkoristimo (exploit) ta jezik ?
 </details>
 <details>
 <summary>

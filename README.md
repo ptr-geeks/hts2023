@@ -7,13 +7,13 @@ is a series of Hacking challenges with each increasing in difficulty and a cake 
 je spletna stran desetih hekerskih izzivov, ki se stopnjujejo v težavnosti.
 
 Problemi so, ampak se ne omejujejo na:
-1. Permutacijska šifra
-2. Šifre
-3. SQLI
+1. Permutacijska šifra,
+2. Šifre,
+3. SQLI,
 4. ...
 
 <!-- 
-asic challenges
+basic challenges
 00. Sanity check
 01. HTML Comment
 02. HTTP Headers
@@ -41,13 +41,13 @@ cd hts2023/server
 pip install -r requirements.txt
 ```
 
-# windows
+## Windows
 
 ```bash
 py localhost.py
 ```
 
-# linux 
+## Linux 
 ```bash
 gunicorn -w 4 -b 0.0.0.0:8000 server:app
 ```
