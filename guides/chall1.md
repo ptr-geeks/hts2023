@@ -12,7 +12,6 @@ Napad na ameriško vlado
 
 
 # Namigi / Hints
-
 <details>
 <summary>
     <i>Namig 1</i> 
@@ -35,12 +34,11 @@ Napad na ameriško vlado
 
 
 # Rešitev / Solution
-
 <details>
 <summary><b>
     Rešitev
 </b></summary>
-    <b>God bless America!</b>
+    God bless America!
 </details>
 <details>
 <summary><b>

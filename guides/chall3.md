@@ -1,14 +1,12 @@
 |[<<](/guides/chall2.md)|[START](/guides/main.md)|[0](/guides/chall0.md)|[1](/guides/chall1.md)|[2](/guides/chall2.md)|[3](/guides/chall3.md)|[4](/guides/chall4.md)|[5](/guides/chall5.md)|[6](/guides/chall6.md)|[7](/guides/chall7.md)|[8](/guides/chall8.md)|[9](/guides/chall9.md)|[10](/guides/chall10.md)|[END](/guides/end.md)|[>>](/guides/chall4.md)|
 |:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|
 
-#### Piškotek / Cookie = 
+#### Piškotek / Cookie = VSUEC5CQKH6VHTr8KD5dVRZMU84GC7kT0CnHC1aZfweh9tzgISdZiFewygpj6Ir2
 
 # Problem 3 / Challenge 3
 Stara sporočila
 
-
 ![Image](/guides/images/image3.png)
-
 
 # Namigi / Hints
 

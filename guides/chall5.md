@@ -8,16 +8,13 @@ Vpis
 
 ![Image](/guides/images/image5.png)
 
-
 # Namigi / Hints
-
 <details>
 <summary>
     <i>Namig 1</i> 
 </summary>
     Kateri "jezik je ponavadi uporabljen pri preverjanu vpisnih podatkov"
 </details>
-
 <details>
 <summary>
     <i>Namig 2</i> 
@@ -32,15 +29,12 @@ Vpis
 <br>
 </details>
 
-
 # Rešitev / Solution
-
 <details>
 <summary><b>
     Rešitev
 </b></summary>
-    admin 
-
+    admin <br />
     'or "1"="1";--
 </details>
 <details>

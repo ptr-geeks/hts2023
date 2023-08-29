@@ -10,14 +10,12 @@
 
 
 # Namigi / Hints
-
 <details>
 <summary>
     <i>Namig 1</i> 
 </summary>
     Poiskusi si poenostaviti problem
 </details>
-
 <details>
 <summary>
     <i>Namig 2</i> 
@@ -33,7 +31,6 @@
 <br>
 
 # Rešitev / Solution
-
 <details>
 <summary><b>
     Rešitev

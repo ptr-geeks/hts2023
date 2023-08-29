@@ -1,36 +1,31 @@
 |[<<](/guides/chall9.md)|[START](/guides/main.md)|[0](/guides/chall0.md)|[1](/guides/chall1.md)|[2](/guides/chall2.md)|[3](/guides/chall3.md)|[4](/guides/chall4.md)|[5](/guides/chall5.md)|[6](/guides/chall6.md)|[7](/guides/chall7.md)|[8](/guides/chall8.md)|[9](/guides/chall9.md)|[10](/guides/chall10.md)|[END](/guides/end.md)|>>|
 |:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|
 
-#### Piškotek / Cookie = 
+#### Piškotek / Cookie = 0to2KqU2E6c0JAbOQzuiMo27G2BysanpeXA0zp6j3RsA1rG3avTLtfEexGoCDRP6
 
-# Problem X / Challenge X
-Naslov
+# Problem 10 / Challenge 10
+Offline
 
-[//]: #slikica
-
-![Image](images/challX.png)
-
+![Image](/guides/images/image10.png)
 
 # Namigi / Hints
-
 <details >
 <summary>
     <i>Namig 1</i> 
 </summary>
-    Nekaj majhnega, kar je dal Andraž
+    ghidra
 </details>
-
 <details >
 <summary>
     <i>Namig 2</i> 
 </summary>
-    Nekaj srednjega
+    kaj naredi prva zanka?
 </details>
-<details >
+<details>
 <summary>
     <i>Namig 3</i> 
 </summary>
-    Direktna navodila (iz opisa)
+    Rešitev je skrita v seznamu, ki je potem obdelan z XOR-jem.
 </details>
 <br>
 
@@ -40,16 +35,47 @@ Naslov
 <summary><b>
     Rešitev
 </b></summary>
-    Kar napiše oz. "Napišemo program za ... / ki ..."
+    __j4N3z$N0vaK=123!__
 </details>
 <details>
 <summary><b>
     Opis
 </b></summary>
-Kaj išče in kje to najde s slikico z dev tooli
+orginalna koda:
 
-![Image](images/challXdev.png)
+```cpp
+#include<stdio.h>
 
-oz. opis programa in obrazložitev ter koda
+char flag[] = {
+	0, 53, 94, 122, 125, 73, 94, 106, 126, 70, 23, 42, 118, 12, 3, 1, 18, 126, 0, 54
+};
+
+int main()
+{
+	char input[21];
+	printf("Vpisi geslo: ");
+	fgets(input, 21, stdin);
+
+	char prev = 0x69;
+	for (int i = 19; i >= 0; i--)
+	{
+		char tmp = input[i];
+		input[i] ^= prev;
+		prev = tmp;
+	}
+
+	for (int i = 0; i < 20; i++)
+	{
+		if (input[i] != flag[i])
+		{
+			printf("Napacno geslo :(\n");
+			return 1;
+		}
+	}
+
+	printf("Bravo!\n");
+	return 0;
+}
+```
 </details>
 

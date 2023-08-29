@@ -10,21 +10,20 @@ Forbidden
 
 
 # Namigi / Hints
-
-<details >
+<details>
 <summary>
     <i>Namig 1</i> 
 </summary>
     Base64, kako izgleda
 </details>
 
-<details >
+<details>
 <summary>
     <i>Namig 2</i> 
 </summary>
 🍪
 </details>
-<details >
+<details>
 <summary>
     <i>Namig 3</i> 
 </summary>

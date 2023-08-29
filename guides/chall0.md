@@ -6,12 +6,10 @@
 # Problem 0 / Challenge 0
 Sanity check
 
-
 ![Image](/guides/images/image0.png)
 
 
 # Namigi / Hints
-
 <details>
 <summary>
     <i>Namig 1</i> 
@@ -21,7 +19,6 @@ Sanity check
 
 
 # Rešitev / Solution
-
 <details>
 <summary><b>
     Rešitev

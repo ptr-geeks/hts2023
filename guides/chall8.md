@@ -9,28 +9,24 @@
 
 ![Image](/guides/images/image8.png)
 
-
 # Namigi / Hints
-
-<details >
+<details>
 <summary>
     <i>Namig 1</i> 
 </summary>
     Kaj je intranet?
 </details>
-
-<details >
+<details>
 <summary>
     <i>Namig 2</i> 
 </summary>
     Kako "pridemo" v intranet?
 </details>
-<details >
+<details>
 <summary>
     <i>Namig 3</i> 
 </summary>
     Dobro si poglej slike
-
 </details>
 <br>
 
@@ -41,9 +37,8 @@
     Rešitev
 </b>
 </summary>
-The mitochondria is the powerhouse of the cell
-
-    https://hts.ptr.si/s/imageoptimizer?url=http://127.0.0.1/s/flag
+The mitochondria is the powerhouse of the cell<br />
+https://hts.ptr.si/s/imageoptimizer?url=http://127.0.0.1/s/flag
 
 (verjetno povezava ne bo delala)
 

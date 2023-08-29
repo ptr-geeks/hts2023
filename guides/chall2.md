@@ -10,7 +10,6 @@ Strežniki
 
 
 # Namigi / Hints
-
 <details>
 <summary>
     <i>Namig 1</i> 
@@ -33,7 +32,6 @@ Strežniki
 <br>
 
 # Rešitev / Solution
-
 <details>
 <summary><b>
     Rešitev

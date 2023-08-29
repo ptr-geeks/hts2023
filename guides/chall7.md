@@ -37,7 +37,6 @@ def validate_flags(request_data):
 <summary>
     <i>Namig 3</i> 
 </summary>
-
     Kako lahko s programom dobiš flage? (spomni se na API)
 </details>
 <br>
@@ -48,8 +47,7 @@ def validate_flags(request_data):
 <summary><b>
     Rešitev
 </b></summary>
-
-    Narediš program, ki prebere flage in jih vrne.
+    Narediš program, ki prebere flage in jih vrne.<br />
     Dobiš cookie za naslednjo nalgo
 </details>
 <details>
@@ -106,6 +104,5 @@ print("-------")
 print(resp["Set-Cookie"])
 
 ```
-
 </details>
 
