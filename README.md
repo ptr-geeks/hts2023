@@ -1,27 +1,53 @@
-# Hack This Site (HTS)
+![image](/guides/images/title.png)
 
-HTS is a series of Hacking challanges with each increasing in difficulty and a cake at the end.
+# Hack This Site (HTS) 
+is a series of Hacking challenges with each increasing in difficulty and a cake at the end.
 
-## Basic challenges
+# Hack this site
+je spletna stran desetih hekerskih izzivov, ki se stopnjujejo v težavnosti.
 
-### 00. Sanity check
+Problemi so, ampak se ne omejujejo na:
+1. Permutacijska šifra
+2. Šifre
+3. SQLI
+4. ...
 
-### 01. HTML Comment
+<!-- 
+asic challenges
+00. Sanity check
+01. HTML Comment
+02. HTTP Headers
+03. Cesar cipher
+04. Base64 JSON admin:false
+05. SQLI
+06. Permutation cipher
+07. OTP Automation
+08. Image optimizer SSRF
+09. Double Server
+10. Rev-->
 
-### 02. HTTP Headers
+# "Navodila", namigi in ostale informacije
 
-### 03. Cesar cipher
+[Tukaj](/guides/main.md)
 
-### 04. Base64 JSON admin:false
+# Self host
+Želiš pognati spletno stran sam, da bi se preiskusil?
+(nekate funkcije mogoče ne bodo delovale)
 
-### 05. SQLI
 
-### 06. Permutation cipher
+```bash
+git clone https://github.com/ptr-geeks/hts2023
+cd hts2023/server
+pip install -r requirements.txt
+```
 
-### 07. OTP Automation
+# windows
 
-### 08. Image optimizer SSRF
+```bash
+py localhost.py
+```
 
-### 09. Double Server
-
-### 10. Rev
+# linux 
+```bash
+gunicorn -w 4 -b 0.0.0.0:8000 server:app
+```
