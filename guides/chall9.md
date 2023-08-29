@@ -1,37 +1,36 @@
 |[<<](/guides/challx-1.md)|[START](/guides/main.md)|[0](/guides/chall0.md)|[1](/guides/chall1.md)|[2](/guides/chall2.md)|[3](/guides/chall3.md)|[4](/guides/chall4.md)|[5](/guides/chall5.md)|[6](/guides/chall6.md)|[7](/guides/chall7.md)|[8](/guides/chall8.md)|[9](/guides/chall9.md)|[10](/guides/chall10.md)|[END](/guides/end.md)|[>>](/guides/challx+1.md)|
 |:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|:-|
 
-#### Piškotek / Cookie = sguplcCLYnPC2u5naYW8YVpJzk5OaDF0MNdYNRcirzV9lOw6xHw3QgPI7zqVuJjT
+#### Piškotek / Cookie = 
 
-# Problem 5 / Challenge 5
-Vpis
+# Problem 9 / Challenge 9
+Pun kufr
 
-![Image](/guides/images/image5.png)
+![Image](/guides/images/image9.png)
 
 
 # Namigi / Hints
 
-<details>
+<details >
 <summary>
     <i>Namig 1</i> 
 </summary>
-    Kateri "jezik je ponavadi uporabljen pri preverjanu vpisnih podatkov"
+    Kaj 
 </details>
 
-<details>
+<details >
 <summary>
     <i>Namig 2</i> 
 </summary>
-    Kako exploitamo ta jezik ?
+    Nekaj srednjega
 </details>
-<details>
+<details >
 <summary>
     <i>Namig 3</i> 
 </summary>
-    SQL (Structured query language), SQL injection, <a href="https://www.youtube.com/watch?v=2OPVViV-GQk">Video o SQL Injection</a>
-<br>
+    Direktna navodila (iz opisa)
 </details>
-
+<br>
 
 # Rešitev / Solution
 
@@ -39,15 +38,16 @@ Vpis
 <summary><b>
     Rešitev
 </b></summary>
-    admin 
-
-    'or "1"="1";--
+    Kar napiše oz. "Napišemo program za ... / ki ..."
 </details>
 <details>
 <summary><b>
     Opis
 </b></summary>
-<a href="https://www.youtube.com/watch?v=2OPVViV-GQk">Video o SQL Injection</a>
+Kaj išče in kje to najde s slikico z dev tooli
 
+![Image](images/challXdev.png)
+
+oz. opis programa in obrazložitev ter koda
 </details>
 
