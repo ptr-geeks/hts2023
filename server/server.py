@@ -68,4 +68,3 @@ def static_route(name) -> Response:
     module_name = "chall." + chall
     module = importlib.import_module(module_name, package=__package__)
     return module.static(name, Metrics)
-
